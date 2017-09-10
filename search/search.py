@@ -91,7 +91,7 @@ def depthFirstSearch(problem):
     print "Start's successors:", problem.getSuccessors(problem.getStartState())
     """
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    return solveSearch(problem, util.Stack())
 
 
 def breadthFirstSearch(problem):
@@ -99,15 +99,42 @@ def breadthFirstSearch(problem):
     Search the shallowest nodes in the search tree first.
     """
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    return solveSearch(problem, util.Queue())
 
+def solveSearch(problem, struct):
+    parentMap = {}
+    visited = set()
+    start = (problem.getStartState())
+    for state in problem.getSuccessors(start):
+        struct.push(state)
+    visited.add(start)
+    while not struct.isEmpty():
+        print "LOOPING"
+        curr = struct.pop()
+        if problem.isGoalState(curr[0]):
+            break
+        if curr[0] in visited:
+            continue
+        visited.add(curr[0])
+        for state in problem.getSuccessors(curr[0]):
+            struct.push(state)
+            parentMap[state] = curr
+    result = []
+    while (curr != None):
+        result.append(curr[1])
+        curr = parentMap.get(curr, None)
+
+    result.reverse()
+    return result
 
 def uniformCostSearch(problem):
+    print "Start's successors:", problem.getSuccessors(problem.getStartState())
+
     """
     Search the node of least total cost first.
     """
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    return solveSearch(problem, util.PriorityQueueWithFunction(lambda x: x[2]))
 
 
 def nullHeuristic(state, problem=None):
