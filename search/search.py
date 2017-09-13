@@ -101,41 +101,47 @@ def breadthFirstSearch(problem):
     "*** YOUR CODE HERE ***"
     return solveSearch(problem, util.Queue())
 
+def uniformCostSearch(problem):
+    """
+    Search the node of least total cost first.
+    """
+    "*** YOUR CODE HERE ***"
+    return solveSearch(problem, util.PriorityQueueWithFunction(lambda x : x[2]))
+
+# Implementation agnostic search algorithm
 def solveSearch(problem, struct):
     parentMap = {}
     visited = set()
     start = (problem.getStartState())
     for state in problem.getSuccessors(start):
+        parentMap[state] = start
         struct.push(state)
     visited.add(start)
+    success = False
     while not struct.isEmpty():
-        print "LOOPING"
         curr = struct.pop()
         if problem.isGoalState(curr[0]):
+            success = True
             break
         if curr[0] in visited:
             continue
         visited.add(curr[0])
         for state in problem.getSuccessors(curr[0]):
+            state = list(state)
+            state[2] += curr[2]
+            state = tuple(state)
             struct.push(state)
-            parentMap[state] = curr
+            if state not in parentMap:
+                parentMap[state] = curr
     result = []
-    while (curr != None):
+    if not success:
+        raise Exception()
+    while (curr != start):
         result.append(curr[1])
-        curr = parentMap.get(curr, None)
+        curr = parentMap.get(curr)
 
     result.reverse()
     return result
-
-def uniformCostSearch(problem):
-    print "Start's successors:", problem.getSuccessors(problem.getStartState())
-
-    """
-    Search the node of least total cost first.
-    """
-    "*** YOUR CODE HERE ***"
-    return solveSearch(problem, util.PriorityQueueWithFunction(lambda x: x[2]))
-
 
 def nullHeuristic(state, problem=None):
     """
@@ -150,8 +156,39 @@ def aStarSearch(problem, heuristic=nullHeuristic):
     Search the node that has the lowest combined cost and heuristic first.
     """
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    struct = util.PriorityQueueWithFunction(lambda x : x[2] + heuristic(x[0], problem))
+    parentMap = {}
+    visited = set()
+    start = (problem.getStartState())
+    for state in problem.getSuccessors(start):
+        parentMap[state] = start
+        struct.push(state)
+    visited.add(start)
+    success = False
+    while not struct.isEmpty():
+        curr = struct.pop()
+        if problem.isGoalState(curr[0]):
+            success = True
+            break
+        if curr[0] in visited:
+            continue
+        visited.add(curr[0])
+        for state in problem.getSuccessors(curr[0]):
+            state = list(state)
+            state[2] += curr[2]
+            state = tuple(state)
+            struct.push(state)
+            if state not in parentMap:
+                parentMap[state] = curr
+    result = []
+    if not success:
+        raise Exception()
+    while (curr != start):
+        result.append(curr[1])
+        curr = parentMap.get(curr)
 
+    result.reverse()
+    return result
 
 # Abbreviations
 bfs = breadthFirstSearch
