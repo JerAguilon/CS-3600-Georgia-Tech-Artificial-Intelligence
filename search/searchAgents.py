@@ -405,25 +405,26 @@ def cornersHeuristic(state, problem):
     result=0
     currentPosition,cornersVisited=state
     nextCornersVisited=list(cornersVisited[:])
-    nextPosition=(currentPosition[0], currentPosition[1])
+    currPosition=(currentPosition[0], currentPosition[1])
     for i in range(4):
-        #print "Step ",i,nextPosition,nextCornersVisited
         distToCorners=[0,0,0,0]
         for j, corner in enumerate(nextCornersVisited):
-            distToCorners[j]=(abs(nextPosition[0] - problem.corners[j][0])**2 + abs(nextPosition[1] - problem.corners[j][1])**2)**.5
-        #print "distToCorners ",distToCorners
-        numClosest=0
+            distToCorners[j]=((currPosition[0] - problem.corners[j][0])**2 + (currPosition[1] - problem.corners[j][1])**2)**.5
+        iClosest=-1
+        if nextCornersVisited == [False,False,True,True]:
+            print(nextCornersVisited)
+            print(distToCorners)
         for j, distCorner in enumerate(distToCorners):
-            #print "compare ",not nextCornersVisited[numCorner],distCorner,distToCorners[numClosest]
-            if (nextCornersVisited[numClosest]):
-                numClosest=j
-            if (not nextCornersVisited[j]) and (distCorner<distToCorners[numClosest]):
-                numClosest=j
-        #print "numClosest ",numClosest
-        if (not nextCornersVisited[numClosest]):
-            result+=distToCorners[numClosest]
-            nextPosition=problem.corners[numClosest][:]
-            nextCornersVisited[numClosest]=True
+            if ((not nextCornersVisited[j]) and (distCorner<distToCorners[iClosest])):
+                iClosest = j
+            if nextCornersVisited[iClosest]:
+                iClosest+=1
+        if nextCornersVisited == [True,True,False,True]:
+            print("closest {}".format(iClosest))
+        if (iClosest < len(nextCornersVisited) and not nextCornersVisited[iClosest]):
+            result+=distToCorners[iClosest]
+            currPosition=problem.corners[iClosest][:]
+            nextCornersVisited[iClosest]=True
         else:
             break
         
@@ -577,7 +578,7 @@ def foodHeuristic(state, problem):
         #print "Move to ",next_position
 
     return result
-        
+
 class ClosestDotSearchAgent(SearchAgent):
     """
     Search for all food using a sequence of searches
