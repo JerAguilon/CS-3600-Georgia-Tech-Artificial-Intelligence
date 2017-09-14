@@ -541,36 +541,39 @@ def foodHeuristic(state, problem):
     result=0
     next_foodGrid=[row[:] for row in foodGrid]
     next_position=position[:]
-    for i in range(2):
-        #print "Step ",x,y,next_position,next_foodGrid
-        #compute the distances : (x,y,dist) only for existing food
-        dist_to_dots=[]
-        for y2 in range(foodGrid.height):
-            for x2 in range(foodGrid.width):
-                if (next_foodGrid[x2][y2]):
-                    dist_to_dots.append((x2,y2,util.manhattanDistance(next_position,(x2,y2))))
-        #print "dist_to_dots ",dist_to_dots
-        
-        if (len(dist_to_dots)==0):
-            break
-        
-        x_closest,y_closest,dist_closest=dist_to_dots[0]
+
+    # get the cheapest neighbor
+    dist_to_dots=[]
+    for y2 in range(foodGrid.height):
+        for x2 in range(foodGrid.width):
+            if (next_foodGrid[x2][y2]):
+                dist_to_dots.append((x2,y2,util.manhattanDistance(next_position,(x2,y2))))
+    
+    if (len(dist_to_dots)!=0):        
+        xbest,ybest,distbest=dist_to_dots[0]
         
         for (x2,y2,dist) in dist_to_dots:
-            #print "Compare ",next_foodGrid[x_closest][y_closest],dist_to_dots[y2][x2],dist_to_dots[y_closest][x_closest]
-            if (i==0) and (dist<dist_closest):
-                x_closest=x2
-                y_closest=y2
-                dist_closest=dist
-            if (i==1) and (dist>dist_closest):
-                x_closest=x2
-                y_closest=y2
-                dist_closest=dist
-        #print "closest ",x_closest,y_closest
-        result+=dist_closest
-        next_position=(x_closest,y_closest)
-        next_foodGrid[x_closest][y_closest]=False
-        #print "Move to ",next_position
+            if (dist<distbest):
+                xbest, ybest, distbest = x2, y2, dist
+        result+=distbest
+        next_position=(xbest,ybest)
+        next_foodGrid[xbest][ybest]=False
+
+
+    # get the most expensive food
+    dist_to_dots = []
+    for y2 in range(foodGrid.height):
+        for x2 in range(foodGrid.width):
+            if (next_foodGrid[x2][y2]):
+                dist_to_dots.append((x2,y2,util.manhattanDistance(next_position,(x2,y2))))
+    
+    if (len(dist_to_dots)!=0):        
+        xbest,ybest,distbest=dist_to_dots[0]
+        for (x2,y2,dist) in dist_to_dots:
+            if (dist>distbest):
+                xbest, ybest, distbest = x2, y2, dist
+        result+=distbest
+
 
     return result
 
