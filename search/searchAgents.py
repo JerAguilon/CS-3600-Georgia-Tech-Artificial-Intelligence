@@ -405,7 +405,6 @@ def cornersHeuristic(state, problem):
     result=0
     corners = problem.corners;
     currentPosition,cornersVisited=state
-    cornersVisited=list(cornersVisited[:]) # copy bc it breaks the algoritm to overwrite
     bestDist = float('-inf')
     bestCorner = -1
 
@@ -416,8 +415,6 @@ def cornersHeuristic(state, problem):
                 bestDist = currDist
                 bestCorner = x
 
-    if bestCorner != -1:
-        cornersVisited[bestCorner] = True
     return bestDist if bestCorner is not -1 else 0
 
 class AStarCornersAgent(SearchAgent):
