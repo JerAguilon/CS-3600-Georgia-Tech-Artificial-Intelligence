@@ -654,23 +654,45 @@ class AnyFoodSearchProblem(PositionSearchProblem):
 ##################
 
 class ApproximateSearchAgent(Agent):
-    """Agent description: Agent first goes to the closest corner. From there, using bfs search, agent goest to the closest dot. 
-        Ties are broken by looking at number of dots around it, and goes to the region with less dots.  """
     "Implement your contest entry here.  Change anything but the class name."
-    def __init__(self):
-        self.moves = []
-        self.corners = []
-        self.top = 0
-        self.right = 0
+
    
     def registerInitialState(self, state):
         "This method is called before any moves are made."
         "*** YOUR CODE HERE ***"
+        self.walls = state.getWalls()
+        self.startingPosition = state.getPacmanPosition()
+        top, right = self.walls.height - 2, self.walls.width - 2
+        self.corners = ((1, 1), (1, top), (right, 1), (right, top))
+        for corner in self.corners:
+            if not state.hasFood(*corner):
+                print 'Warning: no food in corner ' + str(corner)
+        self._expanded = 0  # Number of search nodes expanded
+
+
+        bestDistance = float('inf')
+        bestCorner = None
+        for corner in self.corners:
+            d = mazeDistance(self.startingPosition, corner, state) 
+            print("CORNER {} D {}".format(corner, d))
+
+            if (d < bestDistance):
+                bestDistance = d
+                bestCorner = corner
+        print("BEST CORNER")
+        print(bestCorner)
+        print(bestDistance)
+
+
+        self.cornerMoves = search.breadthFirstSearch(PositionSearchProblem(state, start = self.startingPosition, goal = bestCorner))
+        self.cornerMoveIndex = 0
+        print(self.cornerMoves)
+
         pass
-    def cornerDistance(self, x, y, state):
+    def _cornerDistance(self, x, y, state):
         return max([mazeDistance((x,y), c, state) for c in self.corners])
 
-    def adjacentDots(self, state, currx, curry):
+    def _adjacentDots(self, state, currx, curry):
         foodGrid = state.getFood()
         position = state.getPacmanPosition()
         walls = state.getWalls()
@@ -689,7 +711,13 @@ class ApproximateSearchAgent(Agent):
         Directions.{North, South, East, West, Stop}
         """
         "*** YOUR CODE HERE ***"
-        pass
+        if self.cornerMoveIndex < len(self.cornerMoves):
+            result = self.cornerMoves[self.cornerMoveIndex]
+            self.cornerMoveIndex+=1
+            print("ACTION: {}".format(result))
+            return result
+
+        return "Stop"
 
     def foodHeuristic(self, state, problem):
         position = state.getPacmanPosition()
