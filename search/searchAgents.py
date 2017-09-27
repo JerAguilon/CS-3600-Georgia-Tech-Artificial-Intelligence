@@ -640,7 +640,6 @@ class AnyFoodSearchProblem(PositionSearchProblem):
 class ApproximateSearchAgent(Agent):
     "Implement your contest entry here.  Change anything but the class name."
 
-   
     def registerInitialState(self, state):
         "This method is called before any moves are made."
         "*** YOUR CODE HERE ***"
@@ -653,8 +652,9 @@ class ApproximateSearchAgent(Agent):
         for corner in self.corners:
             if not state.hasFood(*corner):
                 print 'Warning: no food in corner ' + str(corner)
-        self._expanded = 0 
-        self.foundCorners = True
+        self._expanded = 0
+        self.moveIndex = 0
+        self.moveList = []
 
 
     def getAction(self, state):
@@ -664,33 +664,91 @@ class ApproximateSearchAgent(Agent):
         Directions.{North, South, East, West, Stop}
         """
         "*** YOUR CODE HERE ***"
-
-        if not self.foundCorners:
-            bestDistance = float('inf')
-            bestCorner = None
-            for corner in self.corners:
-                d = mazeDistance(self.startingPosition, corner, state) 
-                print("CORNER {} D {}".format(corner, d))
-
-                if (d < bestDistance):
-                    bestDistance = d
-                    bestCorner = corner
-            print("BEST CORNER")
-            print(bestCorner)
-            print(bestDistance)
-
-
-            self.cornerMoves = search.breadthFirstSearch(PositionSearchProblem(state, start = self.startingPosition, goal = bestCorner))
-            self.cornerMoveIndex = 0
-            self.foundCorners = True
-
-        if self.cornerMoveIndex < len(self.cornerMoves):
-            result = self.cornerMoves[self.cornerMoveIndex]
-            self.cornerMoveIndex+=1
+        if self.moveIndex < len(self.moveList):
+            result = self.moveList[self.moveIndex]
+            self.moveIndex+=1
             print("ACTION: {}".format(result))
             return result
+        else:
+            currX, currY =  state.getPacmanPosition()
+            foodGrid = state.getFood()
+            bestDist = float('inf')
+            bestCoord = None
+            walls = state.getWalls()
 
-        return "Stop"
+            # adjacent squares, favor moving to one side (bottom left)
+            if isValid(currX - 1, currY, walls, foodGrid):
+                currDist = dist(currX, currY, currX - 1, currY)
+                if currDist <  bestDist:
+                    bestDist = currDist
+                    bestCoord = (currX - 1, currY)
+
+            if isValid(currX, currY - 1, walls, foodGrid):
+                currDist = dist(currX, currY - 1, currX, currY)
+                if currDist <  bestDist:
+                    bestDist = currDist
+                    bestCoord = (currX, currY - 1)
+
+            if isValid(currX - 1, currY - 1, walls, foodGrid):
+                currDist = dist(currX, currY - 1, currX - 1, currY - 1)
+                if currDist <  bestDist:
+                    bestDist = currDist
+                    bestCoord = (currX - 1, currY - 1)
+            # 2 layers away
+
+            if isValid(currX - 2, currY, walls, foodGrid):
+                currDist = mazeDistance(state.getPacmanPosition(), (currX - 2, currY), state)#dist(currX, currY, currX - 1, currY)
+                if currDist <  bestDist:
+                    bestDist = currDist
+                    bestCoord = (currX - 2, currY)
+            if isValid(currX, currY - 2, walls, foodGrid):
+                currDist = mazeDistance(state.getPacmanPosition(), (currX, currY - 2), state)#dist(currX, currY, currX - 1, currY)
+                if currDist <  bestDist:
+                    bestDist = currDist
+                    bestCoord = (currX, currY - 2)
+            if True:
+                if isValid(currX - 2, currY - 1, walls, foodGrid):
+                    currDist = mazeDistance(state.getPacmanPosition(), (currX - 2, currY - 1), state)#dist(currX, currY, currX - 1, currY)
+                    if currDist <  bestDist:
+                        bestDist = currDist
+                        bestCoord = (currX - 2, currY - 1)
+                if isValid(currX - 1, currY - 2, walls, foodGrid):
+                    currDist = mazeDistance(state.getPacmanPosition(), (currX - 1, currY - 2), state)#dist(currX, currY, currX - 1, currY)
+                    if currDist <  bestDist:
+                        bestDist = currDist
+                        bestCoord = (currX - 1, currY - 2)
+                if isValid(currX - 2, currY - 2, walls, foodGrid):
+                    currDist = mazeDistance(state.getPacmanPosition(), (currX - 2, currY - 2), state)#dist(currX, currY, currX - 1, currY)
+                    if currDist <  bestDist:
+                        bestDist = currDist
+                        bestCoord = (currX - 2, currY - 2)
+            if bestCoord is not None:
+                prob = PositionSearchProblem(state, start = state.getPacmanPosition(), goal=bestCoord)
+                self.moveList.extend(search.bfs(prob))
+            else:
+                # brute force, find the best element
+                for x, row in enumerate(foodGrid):
+                    for y, cell in enumerate(row):
+                        if foodGrid[x][y]:
+                            score = mazeDistance(state.getPacmanPosition(), (x, y), state)
+                            if score < bestDist:
+                                bestDist = score
+                                bestCoord = (x, y)
+                prob = PositionSearchProblem(state, start = state.getPacmanPosition(), goal=bestCoord)
+                self.moveList.extend(search.bfs(prob))
+        result = self.moveList[self.moveIndex]
+        self.moveIndex+=1
+        return result
+
+def isValid(x, y, walls, foodGrid):
+    return x >= 0 and y >= 0 and x < walls.width - 1 and y < walls.height - 1 and foodGrid[x][y] and not walls[x][y]
+
+def isWall(x, y, walls):
+    return x >= 0 and y >= 0 and x < walls.width -1 and y < walls.height - 1 and walls[x][y]
+
+def dist(x1, y1, x2, y2):
+    return abs(x1 - x2) + abs(y1 - y2)
+
 def mazeDistance(point1, point2, gameState):
     """
     Returns the maze distance between any two points, using the search functions
