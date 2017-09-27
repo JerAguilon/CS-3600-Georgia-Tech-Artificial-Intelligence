@@ -403,35 +403,22 @@ def cornersHeuristic(state, problem):
     """
     "*** YOUR CODE HERE ***"
     result=0
+    corners = problem.corners;
     currentPosition,cornersVisited=state
     cornersVisited=list(cornersVisited[:]) # copy bc it breaks the algoritm to overwrite
-    for i in range(4):
-        iClosest= -1
+    bestDist = float('-inf')
+    bestCorner = -1
 
-        # check if all corners touched already
-        for j, visited in enumerate(cornersVisited):
-            if not visited:
-                iClosest = j
-        if iClosest == -1:
-            break
+    for x, corner in enumerate(corners):
+        if not  cornersVisited[x]:
+            currDist = abs(currentPosition[0] - corner[0]) + abs(currentPosition[1] - corner[1])
+            if currDist > bestDist:
+                bestDist = currDist
+                bestCorner = x
 
-        distToCorners=[0,0,0,0]
-        for j, corner in enumerate(cornersVisited):
-            distToCorners[j]=((currentPosition[0] - problem.corners[j][0])**2 + (currentPosition[1] - problem.corners[j][1])**2)**.5
-
-        for j, distCorner in enumerate(distToCorners):
-            if ((not cornersVisited[j]) and (distCorner<distToCorners[iClosest])):
-                iClosest = j
-            if cornersVisited[iClosest]:
-                iClosest+=1
-        result+=distToCorners[iClosest]
-        currentPosition=problem.corners[iClosest][:]
-        cornersVisited[iClosest]=True
-
-        
-    #print "cornersHeuristic: ",result
-    
-    return result
+    if bestCorner != -1:
+        cornersVisited[bestCorner] = True
+    return bestDist if bestCorner is not -1 else 0
 
 class AStarCornersAgent(SearchAgent):
     """
