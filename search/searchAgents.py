@@ -661,48 +661,17 @@ class ApproximateSearchAgent(Agent):
         "This method is called before any moves are made."
         "*** YOUR CODE HERE ***"
         self.walls = state.getWalls()
+        top, right = self.walls.height-2, self.walls.width-2
+        self.top, self.right = top, right
         self.startingPosition = state.getPacmanPosition()
         top, right = self.walls.height - 2, self.walls.width - 2
         self.corners = ((1, 1), (1, top), (right, 1), (right, top))
         for corner in self.corners:
             if not state.hasFood(*corner):
                 print 'Warning: no food in corner ' + str(corner)
-        self._expanded = 0  # Number of search nodes expanded
+        self._expanded = 0 
+        self.foundCorners = True
 
-
-        bestDistance = float('inf')
-        bestCorner = None
-        for corner in self.corners:
-            d = mazeDistance(self.startingPosition, corner, state) 
-            print("CORNER {} D {}".format(corner, d))
-
-            if (d < bestDistance):
-                bestDistance = d
-                bestCorner = corner
-        print("BEST CORNER")
-        print(bestCorner)
-        print(bestDistance)
-
-
-        self.cornerMoves = search.breadthFirstSearch(PositionSearchProblem(state, start = self.startingPosition, goal = bestCorner))
-        self.cornerMoveIndex = 0
-        print(self.cornerMoves)
-
-        pass
-    def _cornerDistance(self, x, y, state):
-        return max([mazeDistance((x,y), c, state) for c in self.corners])
-
-    def _adjacentDots(self, state, currx, curry):
-        foodGrid = state.getFood()
-        position = state.getPacmanPosition()
-        walls = state.getWalls()
-        count = 0
-        for x in range(currx-2, currx+2):
-            for y in range(curry-2, curry+2):
-                if x >= 0 and y >= 0 and x <= self.right and y <= self.top:
-                    if foodGrid[x][y] and not walls[x][y]:
-                        count += 1
-        return count
 
     def getAction(self, state):
         """
@@ -711,6 +680,26 @@ class ApproximateSearchAgent(Agent):
         Directions.{North, South, East, West, Stop}
         """
         "*** YOUR CODE HERE ***"
+
+        if not self.foundCorners:
+            bestDistance = float('inf')
+            bestCorner = None
+            for corner in self.corners:
+                d = mazeDistance(self.startingPosition, corner, state) 
+                print("CORNER {} D {}".format(corner, d))
+
+                if (d < bestDistance):
+                    bestDistance = d
+                    bestCorner = corner
+            print("BEST CORNER")
+            print(bestCorner)
+            print(bestDistance)
+
+
+            self.cornerMoves = search.breadthFirstSearch(PositionSearchProblem(state, start = self.startingPosition, goal = bestCorner))
+            self.cornerMoveIndex = 0
+            self.foundCorners = True
+
         if self.cornerMoveIndex < len(self.cornerMoves):
             result = self.cornerMoves[self.cornerMoveIndex]
             self.cornerMoveIndex+=1
@@ -718,23 +707,6 @@ class ApproximateSearchAgent(Agent):
             return result
 
         return "Stop"
-
-    def foodHeuristic(self, state, problem):
-        position = state.getPacmanPosition()
-        food = state.getFood()
-        walls = state.getWalls()
-        total = []
-        for x, row in enumerate(foodGrid):
-            for y, cell in enumerate(row):
-                if foodGrid[x][y]:
-                    # total.append(find_manhattan_distance(position, (x,y)))
-                    total.append(mazeDistance(position, (x,y), state))
-        if total:
-            return max(total)
-        return 0
-
-
-
 def mazeDistance(point1, point2, gameState):
     """
     Returns the maze distance between any two points, using the search functions
