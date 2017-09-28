@@ -282,7 +282,6 @@ def euclideanHeuristic(position, problem, info={}):
     """
     xy1 = position
     xy2 = problem.goal
-    print "FOOBAR"
     return ((xy1[0] - xy2[0]) ** 2 + (xy1[1] - xy2[1]) ** 2) ** 0.5
 
 
@@ -649,9 +648,6 @@ class ApproximateSearchAgent(Agent):
         self.startingPosition = state.getPacmanPosition()
         top, right = self.walls.height - 2, self.walls.width - 2
         self.corners = ((1, 1), (1, top), (right, 1), (right, top))
-        for corner in self.corners:
-            if not state.hasFood(*corner):
-                print 'Warning: no food in corner ' + str(corner)
         self._expanded = 0
         self.moveIndex = 0
         self.moveList = []
