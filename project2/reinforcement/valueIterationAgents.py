@@ -4,7 +4,7 @@
 # educational purposes provided that (1) you do not distribute or publish
 # solutions, (2) you retain this notice, and (3) you provide clear
 # attribution to UC Berkeley, including a link to http://ai.berkeley.edu.
-# 
+#
 # Attribution Information: The Pacman AI projects were developed at UC Berkeley.
 # The core projects and autograders were primarily created by John DeNero
 # (denero@cs.berkeley.edu) and Dan Klein (klein@cs.berkeley.edu).
@@ -46,6 +46,19 @@ class ValueIterationAgent(ValueEstimationAgent):
         # Write value iteration code here
         "*** YOUR CODE HERE ***"
 
+        currentIteration = util.Counter() 
+        for i in range(iterations):
+          for state in self.mdp.getStates():
+              bestScore = float('-inf')
+              for action in self.mdp.getPossibleActions(state):
+                  qVal = self.computeQValueFromValues(state,action)
+                  if qVal > bestScore:
+                    bestScore = qVal
+              if bestScore != float('-inf'):
+                currentIteration[state] = bestScore
+        
+          for state in self.values:
+              self.values[state] = currentIteration[state]
 
     def getValue(self, state):
         """
@@ -60,7 +73,12 @@ class ValueIterationAgent(ValueEstimationAgent):
           value function stored in self.values.
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        nextStates = self.mdp.getTransitionStatesAndProbs(state,action) 
+        value = 0 
+        for nextState,prob in nextStates:
+            value += prob*(self.mdp.getReward(state,action,nextState) + self.discount*self.values[nextState])
+        return value
+
 
     def computeActionFromValues(self, state):
         """
@@ -72,7 +90,15 @@ class ValueIterationAgent(ValueEstimationAgent):
           terminal state, you should return None.
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        actions = self.mdp.getPossibleActions(state) 
+        bestAction = None
+        bestVal = float('-inf')
+        for a in actions:
+          qVal = self.computeQValueFromValues(state, a)
+          if qVal > bestVal:
+            bestAction = a
+            bestVal = qVal
+        return bestAction
 
     def getPolicy(self, state):
         return self.computeActionFromValues(state)
