@@ -272,7 +272,16 @@ class ParticleFilter(InferenceModule):
             and will produce errors
         """
         "*** YOUR CODE HERE ***"
-
+        particles = []
+        numParticles = self.numParticles
+        while numParticles > 0:
+            if numParticles <= len(self.legalPositions):
+                particles += self.legalPositions[0:numParticles]
+                break
+            else:
+                particles += self.legalPositions
+                numParticles -= len(self.legalPositions)
+        self.particles = particles
     def observe(self, observation, gameState):
         """
         Update beliefs based on the given distance observation. Make
@@ -306,7 +315,25 @@ class ParticleFilter(InferenceModule):
         emissionModel = busters.getObservationDistribution(noisyDistance)
         pacmanPosition = gameState.getPacmanPosition()
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        if noisyDistance is None:
+            self.particles = [self.getJailPosition() for i in range(self.numParticles)]
+
+        beliefs = util.Counter()
+        for i in range(self.numParticles):
+            beliefs[self.particles[i]] += 1
+        for location, val in beliefs.items():
+            # print("LOCATION")
+            # print(location)
+            # print("VAL")
+            # print(val)
+            # print(emissionModel)
+            d = abs(location[0] - pacmanPosition[0]) + abs(location[1] + pacmanPosition[1])
+            beliefs[location] = val * emissionModel[d]
+
+        if sum(beliefs.values()) == 0:
+            self.initializeUniformly(gameState)
+        else:
+            self.particles = [util.sample(beliefs) for i in range(self.numParticles)]
 
     def elapseTime(self, gameState):
         """
@@ -333,7 +360,14 @@ class ParticleFilter(InferenceModule):
           essentially converts a list of particles into a belief distribution (a Counter object)
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        dist = util.Counter()
+        for p in self.particles:
+            if p in dist:
+                dist[p] += 1
+            else:
+                dist[p] = 1
+        dist.normalize()
+        return dist
 
 class MarginalInference(InferenceModule):
     "A wrapper around the JointInference module that returns marginal beliefs about ghosts."
