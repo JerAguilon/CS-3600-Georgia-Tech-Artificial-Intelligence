@@ -314,20 +314,23 @@ class ParticleFilter(InferenceModule):
         noisyDistance = observation
         emissionModel = busters.getObservationDistribution(noisyDistance)
         pacmanPosition = gameState.getPacmanPosition()
+        beliefs = util.Counter()
+
         "*** YOUR CODE HERE ***"
         if noisyDistance is None:
             self.particles = [self.getJailPosition() for i in range(self.numParticles)]
+            return
 
-        beliefs = util.Counter()
-        for i in range(self.numParticles):
-            beliefs[self.particles[i]] += 1
+        for item in self.particles:
+            beliefs[item] += 1
+
         for location, val in beliefs.items():
             # print("LOCATION")
             # print(location)
             # print("VAL")
             # print(val)
             # print(emissionModel)
-            d = abs(location[0] - pacmanPosition[0]) + abs(location[1] + pacmanPosition[1])
+            d = abs(location[0] - pacmanPosition[0]) + abs(location[1] - pacmanPosition[1])
             beliefs[location] = val * emissionModel[d]
 
         if sum(beliefs.values()) == 0:
@@ -351,7 +354,11 @@ class ParticleFilter(InferenceModule):
         belief distribution
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+	newParticles = []
+	for p in self.particles:
+		newPosDist = self.getPositionDistribution(self.setGhostPosition(gameState, p))
+		newParticles.append(util.sample(newPosDist))
+	self.particles = newParticles
 
     def getBeliefDistribution(self):
         """
