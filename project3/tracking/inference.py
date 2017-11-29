@@ -353,8 +353,8 @@ class ParticleFilter(InferenceModule):
         "*** YOUR CODE HERE ***"
 	newParticles = []
 	for p in self.particles:
-		newPosDist = self.getPositionDistribution(self.setGhostPosition(gameState, p))
-		newParticles.append(util.sample(newPosDist))
+            newPosDist = self.getPositionDistribution(self.setGhostPosition(gameState, p))
+            newParticles.append(util.sample(newPosDist))
 	self.particles = newParticles
 
     def getBeliefDistribution(self):
@@ -498,7 +498,6 @@ class JointParticleFilter:
                     partial = partial * emissionModels[j][d]
                 else:
                     p = self.getParticleWithGhostInJail(p, j)
-            # counter[particle] = partial
             counter[p] += partial
         if not any(counter.values()): #all(v == 0 for k, v in counter.items()):
             self.initializeParticles()
