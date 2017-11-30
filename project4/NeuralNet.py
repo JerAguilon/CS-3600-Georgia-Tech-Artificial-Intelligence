@@ -333,7 +333,7 @@ def buildNeuralNet(examples, alpha=0.1, weightChangeThreshold = 0.00008,hiddenLa
     while weightMod > weightChangeThreshold and iteration < maxItr:
         sse, weightMod = nnet.backPropLearning(examplesTrain, alpha)
         iteration += 1
-        if iteration%10==0:
+        if iteration%150==0:
             print '! on iteration %d; training error %f and weight change %f'%(iteration,trainError,weightMod)
         else :
             print '.',
@@ -352,8 +352,8 @@ def buildNeuralNet(examples, alpha=0.1, weightChangeThreshold = 0.00008,hiddenLa
 
     for input, output in examplesTest:
         nnetOut = nnet.feedForward(input)[-1]
-        print([float(i) for i in output])
-        print([round(i) for i in nnetOut])
+        # print([float(i) for i in output])
+        # print([round(i) for i in nnetOut])
         equal = True
         for i in range(len(nnetOut)):
             if round(nnetOut[i]) != output[i]:
