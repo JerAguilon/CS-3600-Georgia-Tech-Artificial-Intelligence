@@ -19,87 +19,49 @@ carData = buildExamplesFromCarData()
 def testCarData(hiddenLayers = [16]):
     return buildNeuralNet(carData,maxItr = 200,hiddenLayerList =  hiddenLayers)
 
-def q5Test():
-    print "Q5 Test\n"
-    print "Now testing Pen Data\n"
-    iteration = 0
-    penDataList = []
-    while iteration < 5:
-        penNet, testAccuracy = testPenData()
-        penDataList.append(testAccuracy)
-        iteration += 1
+def printResults(results):
+    print("MAX:     {}".format(max(results)))
+    print("AVERAGE: {}".format(average(results)))
+    print("STD:     {}".format(stDeviation(results)))
 
-    print "Max of the Pen Data is:", max(penDataList)
-    print "Average of the Pen Data is:", average(penDataList)
-    print "Standard Deviation of the Pen Data is:", stDeviation(penDataList)
-    print "\n"
+def q5():
+    print("Q5")
 
-    print "Now testing Car Data\n"
-    iteration = 0
-    carDataList = []
-    while iteration < 5:
-        carNet, testAccuracy = testCarData()
-        carDataList.append(testAccuracy)
-        iteration += 1
+    print("PENDATA")
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    pen_results = []
+    for i in range(5):
+        pen_results.append(testPenData()[1])
+    printResults(pen_results)
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
-    print "Max of the Car Data is:", max(carDataList)
-    print "Average of the Car Data is:", average(carDataList)
-    print "Standard Deviation of the Car Data is:", stDeviation(carDataList)
-    print "\n"
+    print("CARDATA")
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    car_results = []
+    for i in range(5):
+        car_results.append(testCarData()[1])
+    printResults(car_results)
+
+def q6():
+    print("Q6")
+
+    print("PENDATA")
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    for i in range(0, 41, 5):
+        pen_results = []
+        for _ in range(5):
+            pen_results.append(testPenData()[1])
+        print("PENDATA PERCEPTRON COUNT {}".format(i))
+        printResults(pen_results)
 
 
-def q6Test():
-    #80 total neural networks ran
-    print "Q6 Test"
-    print "Now testing Pen Data\n"
-    numPerceptrons = 0
-    perceptronIncrement = 5
-    while numPerceptrons <= 40:
-        print "Now testing Pen Data with", numPerceptrons, "perceptrons\n"
-        iteration = 0
-        penDataList = []
-        while iteration < 5:
-            penNet, testAccuracy = testPenData(hiddenLayers=[numPerceptrons])
-            penDataList.append(testAccuracy)
-            iteration += 1
-        print "The set of Pen Data with", numPerceptrons, "perceptrons"
-        print "Max of the Pen Data is:", max(penDataList)
-        print "Average of the Pen Data is:", average(penDataList)
-        print "Standard Deviation of the Pen Data is:", stDeviation(penDataList)
-        print "\n"
-        numPerceptrons += perceptronIncrement
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    print("CARDATA")
 
-    print "Now testing Car Data\n"
-    numPerceptrons = 0
-    perceptronIncrement = 5
-    while numPerceptrons <= 40:
-        print "Now testing Car Data with", numPerceptrons, "perceptrons\n"
-        iteration = 0
-        carDataList = []
-        while iteration < 5:
-            penNet, testAccuracy = testCarData(hiddenLayers=[numPerceptrons])
-            carDataList.append(testAccuracy)
-            iteration += 1
-        print "The set of Car Data with", numPerceptrons, "perceptrons"
-        print "Max of the Car Data is:", max(carDataList)
-        print "Average of the Car Data is: ", average(carDataList)
-        print "Standard Deviation of the Car Data is: ", stDeviation(carDataList)
-        print "\n"
-        numPerceptrons += perceptronIncrement
-
-"""
-def q7Test():
-    numPerceptrons = 0
-    perceptronIncrement = 5
-    while numPerceptrons <= 40:
-        iteration = 0
-        penDataList = []
-        while iteration < 5:
-            testAccuracy = numPerceptrons
-            penDataList2.append(testAccuracy)
-            iteration += 1
-        print penDataList
-        numPerceptrons += perceptronIncrement
-"""
-
-q6Test()
+    for i in range(0, 41, 5):
+        car_results = []
+        for _ in range(5):
+            pen_results.append(testCarData()[1])
+        print("CARDATA PEREPTRON COUNT {}".format(i))
+        printResults(pen_results)
+q6()
