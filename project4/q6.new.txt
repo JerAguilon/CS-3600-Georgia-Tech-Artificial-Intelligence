@@ -1,0 +1,630 @@
+Q6 Test
+Now testing Pen Data
+
+Now testing Pen Data with 0 perceptrons
+
+Starting training at time 21:12:35.980545 with 16 inputs, 10 outputs, [0] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.001615
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 21:13:36.136987 with training error 0.000000 and weight change 0.001615
+0 3498
+Feed Forward Test correctly classified 0, incorrectly classified 3498, test accuracy 0.000000
+
+Starting training at time 21:13:36.184873 with 16 inputs, 10 outputs, [0] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.001615
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 21:14:37.347466 with training error 0.000000 and weight change 0.001615
+0 3498
+Feed Forward Test correctly classified 0, incorrectly classified 3498, test accuracy 0.000000
+
+Starting training at time 21:14:37.400846 with 16 inputs, 10 outputs, [0] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.001615
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 21:15:37.961346 with training error 0.000000 and weight change 0.001615
+0 3498
+Feed Forward Test correctly classified 0, incorrectly classified 3498, test accuracy 0.000000
+
+Starting training at time 21:15:38.008395 with 16 inputs, 10 outputs, [0] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.001615
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 21:16:40.649293 with training error 0.000000 and weight change 0.001615
+0 3498
+Feed Forward Test correctly classified 0, incorrectly classified 3498, test accuracy 0.000000
+
+Starting training at time 21:16:40.697644 with 16 inputs, 10 outputs, [0] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.001615
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 21:17:44.536952 with training error 0.000000 and weight change 0.001615
+0 3498
+Feed Forward Test correctly classified 0, incorrectly classified 3498, test accuracy 0.000000
+
+The set of Pen Data with 0 perceptrons
+Max of the Pen Data is: 0.0
+Average of the Pen Data is: 0.0
+Standard Deviation of the Pen Data is: 0.0
+
+
+Now testing Pen Data with 5 perceptrons
+
+Starting training at time 21:17:44.588780 with 16 inputs, 10 outputs, [5] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000373
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 21:20:58.469778 with training error 0.000000 and weight change 0.000334
+2966 532
+Feed Forward Test correctly classified 2966, incorrectly classified 532, test accuracy 0.847913
+
+Starting training at time 21:20:58.587572 with 16 inputs, 10 outputs, [5] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000353
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 21:24:12.900503 with training error 0.000000 and weight change 0.000335
+2947 551
+Feed Forward Test correctly classified 2947, incorrectly classified 551, test accuracy 0.842481
+
+Starting training at time 21:24:13.015477 with 16 inputs, 10 outputs, [5] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000507
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 21:27:25.546390 with training error 0.000000 and weight change 0.000498
+2788 710
+Feed Forward Test correctly classified 2788, incorrectly classified 710, test accuracy 0.797027
+
+Starting training at time 21:27:25.660806 with 16 inputs, 10 outputs, [5] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000292
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 21:30:39.197792 with training error 0.000000 and weight change 0.000281
+2961 537
+Feed Forward Test correctly classified 2961, incorrectly classified 537, test accuracy 0.846484
+
+Starting training at time 21:30:39.312880 with 16 inputs, 10 outputs, [5] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000377
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 21:33:52.595506 with training error 0.000000 and weight change 0.000356
+2941 557
+Feed Forward Test correctly classified 2941, incorrectly classified 557, test accuracy 0.840766
+
+The set of Pen Data with 5 perceptrons
+Max of the Pen Data is: 0.847913093196
+Average of the Pen Data is: 0.834934248142
+Standard Deviation of the Pen Data is: 0.0191299784423
+
+
+Now testing Pen Data with 10 perceptrons
+
+Starting training at time 21:33:52.714532 with 16 inputs, 10 outputs, [10] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000125
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 21:39:05.227862 with training error 0.000000 and weight change 0.000111
+3056 442
+Feed Forward Test correctly classified 3056, incorrectly classified 442, test accuracy 0.873642
+
+Starting training at time 21:39:05.397615 with 16 inputs, 10 outputs, [10] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000150
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 21:44:12.820407 with training error 0.000000 and weight change 0.000137
+3076 422
+Feed Forward Test correctly classified 3076, incorrectly classified 422, test accuracy 0.879360
+
+Starting training at time 21:44:12.990822 with 16 inputs, 10 outputs, [10] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000124
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 21:49:09.857408 with training error 0.000000 and weight change 0.000134
+3064 434
+Feed Forward Test correctly classified 3064, incorrectly classified 434, test accuracy 0.875929
+
+Starting training at time 21:49:10.025000 with 16 inputs, 10 outputs, [10] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000117
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 21:54:12.919910 with training error 0.000000 and weight change 0.000105
+3151 347
+Feed Forward Test correctly classified 3151, incorrectly classified 347, test accuracy 0.900800
+
+Starting training at time 21:54:13.088556 with 16 inputs, 10 outputs, [10] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000125
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 21:59:12.459938 with training error 0.000000 and weight change 0.000107
+3160 338
+Feed Forward Test correctly classified 3160, incorrectly classified 338, test accuracy 0.903373
+
+The set of Pen Data with 10 perceptrons
+Max of the Pen Data is: 0.903373356204
+Average of the Pen Data is: 0.886620926244
+Standard Deviation of the Pen Data is: 0.0127843255174
+
+
+Now testing Pen Data with 15 perceptrons
+
+Starting training at time 21:59:12.627227 with 16 inputs, 10 outputs, [15] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 141 iterations at time 22:04:05.157936 with training error 0.000000 and weight change 0.000080
+3159 339
+Feed Forward Test correctly classified 3159, incorrectly classified 339, test accuracy 0.903087
+
+Starting training at time 22:04:05.387465 with 16 inputs, 10 outputs, [15] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000081
+. . . . . Finished after 155 iterations at time 22:09:22.052402 with training error 0.000000 and weight change 0.000080
+3111 387
+Feed Forward Test correctly classified 3111, incorrectly classified 387, test accuracy 0.889365
+
+Starting training at time 22:09:22.279837 with 16 inputs, 10 outputs, [15] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 113 iterations at time 22:13:08.528021 with training error 0.000000 and weight change 0.000080
+3149 349
+Feed Forward Test correctly classified 3149, incorrectly classified 349, test accuracy 0.900229
+
+Starting training at time 22:13:08.747695 with 16 inputs, 10 outputs, [15] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 123 iterations at time 22:17:15.214936 with training error 0.000000 and weight change 0.000080
+3136 362
+Feed Forward Test correctly classified 3136, incorrectly classified 362, test accuracy 0.896512
+
+Starting training at time 22:17:15.444471 with 16 inputs, 10 outputs, [15] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 128 iterations at time 22:21:33.040109 with training error 0.000000 and weight change 0.000080
+3132 366
+Feed Forward Test correctly classified 3132, incorrectly classified 366, test accuracy 0.895369
+
+The set of Pen Data with 15 perceptrons
+Max of the Pen Data is: 0.903087478559
+Average of the Pen Data is: 0.896912521441
+Standard Deviation of the Pen Data is: 0.00466112080553
+
+
+Now testing Pen Data with 20 perceptrons
+
+Starting training at time 22:21:33.258528 with 16 inputs, 10 outputs, [20] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 90 iterations at time 22:25:23.721744 with training error 0.000000 and weight change 0.000080
+3160 338
+Feed Forward Test correctly classified 3160, incorrectly classified 338, test accuracy 0.903373
+
+Starting training at time 22:25:23.999597 with 16 inputs, 10 outputs, [20] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 89 iterations at time 22:29:12.271770 with training error 0.000000 and weight change 0.000080
+3168 330
+Feed Forward Test correctly classified 3168, incorrectly classified 330, test accuracy 0.905660
+
+Starting training at time 22:29:12.547747 with 16 inputs, 10 outputs, [20] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 92 iterations at time 22:33:10.211352 with training error 0.000000 and weight change 0.000080
+3167 331
+Feed Forward Test correctly classified 3167, incorrectly classified 331, test accuracy 0.905374
+
+Starting training at time 22:33:10.492992 with 16 inputs, 10 outputs, [20] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 85 iterations at time 22:36:52.423614 with training error 0.000000 and weight change 0.000080
+3143 355
+Feed Forward Test correctly classified 3143, incorrectly classified 355, test accuracy 0.898513
+
+Starting training at time 22:36:52.702156 with 16 inputs, 10 outputs, [20] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 101 iterations at time 22:41:16.289565 with training error 0.000000 and weight change 0.000080
+3173 325
+Feed Forward Test correctly classified 3173, incorrectly classified 325, test accuracy 0.907090
+
+The set of Pen Data with 20 perceptrons
+Max of the Pen Data is: 0.90708976558
+Average of the Pen Data is: 0.904002287021
+Standard Deviation of the Pen Data is: 0.00298957494852
+
+
+Now testing Pen Data with 25 perceptrons
+
+Starting training at time 22:41:16.574446 with 16 inputs, 10 outputs, [25] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 73 iterations at time 22:45:09.658742 with training error 0.000000 and weight change 0.000080
+3165 333
+Feed Forward Test correctly classified 3165, incorrectly classified 333, test accuracy 0.904803
+
+Starting training at time 22:45:10.004086 with 16 inputs, 10 outputs, [25] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 68 iterations at time 22:48:47.331059 with training error 0.000000 and weight change 0.000080
+3155 343
+Feed Forward Test correctly classified 3155, incorrectly classified 343, test accuracy 0.901944
+
+Starting training at time 22:48:47.683407 with 16 inputs, 10 outputs, [25] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 64 iterations at time 22:52:13.230219 with training error 0.000000 and weight change 0.000079
+3120 378
+Feed Forward Test correctly classified 3120, incorrectly classified 378, test accuracy 0.891938
+
+Starting training at time 22:52:13.572351 with 16 inputs, 10 outputs, [25] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 71 iterations at time 22:56:01.177671 with training error 0.000000 and weight change 0.000079
+3169 329
+Feed Forward Test correctly classified 3169, incorrectly classified 329, test accuracy 0.905946
+
+Starting training at time 22:56:01.534187 with 16 inputs, 10 outputs, [25] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 66 iterations at time 22:59:32.245432 with training error 0.000000 and weight change 0.000080
+3163 335
+Feed Forward Test correctly classified 3163, incorrectly classified 335, test accuracy 0.904231
+
+The set of Pen Data with 25 perceptrons
+Max of the Pen Data is: 0.905946255003
+Average of the Pen Data is: 0.901772441395
+Standard Deviation of the Pen Data is: 0.00508701576204
+
+
+Now testing Pen Data with 30 perceptrons
+
+Starting training at time 22:59:32.597195 with 16 inputs, 10 outputs, [30] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 56 iterations at time 23:03:02.751914 with training error 0.000000 and weight change 0.000080
+3165 333
+Feed Forward Test correctly classified 3165, incorrectly classified 333, test accuracy 0.904803
+
+Starting training at time 23:03:03.149009 with 16 inputs, 10 outputs, [30] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 67 iterations at time 23:07:14.860253 with training error 0.000000 and weight change 0.000080
+3187 311
+Feed Forward Test correctly classified 3187, incorrectly classified 311, test accuracy 0.911092
+
+Starting training at time 23:07:15.261976 with 16 inputs, 10 outputs, [30] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 66 iterations at time 23:11:23.035905 with training error 0.000000 and weight change 0.000079
+3166 332
+Feed Forward Test correctly classified 3166, incorrectly classified 332, test accuracy 0.905089
+
+Starting training at time 23:11:23.433492 with 16 inputs, 10 outputs, [30] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 64 iterations at time 23:15:23.312901 with training error 0.000000 and weight change 0.000080
+3168 330
+Feed Forward Test correctly classified 3168, incorrectly classified 330, test accuracy 0.905660
+
+Starting training at time 23:15:23.717529 with 16 inputs, 10 outputs, [30] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 60 iterations at time 23:19:09.511261 with training error 0.000000 and weight change 0.000080
+3174 324
+Feed Forward Test correctly classified 3174, incorrectly classified 324, test accuracy 0.907376
+
+The set of Pen Data with 30 perceptrons
+Max of the Pen Data is: 0.911092052601
+Average of the Pen Data is: 0.906803887936
+Standard Deviation of the Pen Data is: 0.00232248096187
+
+
+Now testing Pen Data with 35 perceptrons
+
+Starting training at time 23:19:09.909052 with 16 inputs, 10 outputs, [35] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 49 iterations at time 23:22:42.358424 with training error 0.000000 and weight change 0.000080
+3115 383
+Feed Forward Test correctly classified 3115, incorrectly classified 383, test accuracy 0.890509
+
+Starting training at time 23:22:42.813539 with 16 inputs, 10 outputs, [35] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 53 iterations at time 23:26:32.453436 with training error 0.000000 and weight change 0.000080
+3170 328
+Feed Forward Test correctly classified 3170, incorrectly classified 328, test accuracy 0.906232
+
+Starting training at time 23:26:32.917228 with 16 inputs, 10 outputs, [35] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 60 iterations at time 23:30:53.742397 with training error 0.000000 and weight change 0.000080
+3153 345
+Feed Forward Test correctly classified 3153, incorrectly classified 345, test accuracy 0.901372
+
+Starting training at time 23:30:54.210546 with 16 inputs, 10 outputs, [35] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 51 iterations at time 23:34:35.737851 with training error 0.000000 and weight change 0.000080
+3166 332
+Feed Forward Test correctly classified 3166, incorrectly classified 332, test accuracy 0.905089
+
+Starting training at time 23:34:36.199351 with 16 inputs, 10 outputs, [35] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 48 iterations at time 23:38:04.627626 with training error 0.000000 and weight change 0.000079
+3173 325
+Feed Forward Test correctly classified 3173, incorrectly classified 325, test accuracy 0.907090
+
+The set of Pen Data with 35 perceptrons
+Max of the Pen Data is: 0.90708976558
+Average of the Pen Data is: 0.902058319039
+Standard Deviation of the Pen Data is: 0.00609556569689
+
+
+Now testing Pen Data with 40 perceptrons
+
+Starting training at time 23:38:05.097366 with 16 inputs, 10 outputs, [40] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 44 iterations at time 23:41:44.125848 with training error 0.000000 and weight change 0.000080
+3144 354
+Feed Forward Test correctly classified 3144, incorrectly classified 354, test accuracy 0.898799
+
+Starting training at time 23:41:44.649272 with 16 inputs, 10 outputs, [40] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 52 iterations at time 23:46:03.512746 with training error 0.000000 and weight change 0.000079
+3150 348
+Feed Forward Test correctly classified 3150, incorrectly classified 348, test accuracy 0.900515
+
+Starting training at time 23:46:04.042729 with 16 inputs, 10 outputs, [40] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 49 iterations at time 23:50:10.206145 with training error 0.000000 and weight change 0.000079
+3159 339
+Feed Forward Test correctly classified 3159, incorrectly classified 339, test accuracy 0.903087
+
+Starting training at time 23:50:10.747100 with 16 inputs, 10 outputs, [40] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 47 iterations at time 23:54:05.047559 with training error 0.000000 and weight change 0.000080
+3164 334
+Feed Forward Test correctly classified 3164, incorrectly classified 334, test accuracy 0.904517
+
+Starting training at time 23:54:05.579945 with 16 inputs, 10 outputs, [40] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 45 iterations at time 23:57:45.521012 with training error 0.000000 and weight change 0.000080
+3164 334
+Feed Forward Test correctly classified 3164, incorrectly classified 334, test accuracy 0.904517
+
+The set of Pen Data with 40 perceptrons
+Max of the Pen Data is: 0.904516866781
+Average of the Pen Data is: 0.902287021155
+Standard Deviation of the Pen Data is: 0.00227555731757
+
+
+Now testing Car Data
+
+Now testing Car Data with 0 perceptrons
+
+Starting training at time 23:57:46.052353 with 21 inputs, 4 outputs, [0] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.003879
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 23:57:51.029008 with training error 0.000000 and weight change 0.003879
+145 55
+Feed Forward Test correctly classified 145, incorrectly classified 55, test accuracy 0.725000
+
+Starting training at time 23:57:51.030167 with 21 inputs, 4 outputs, [0] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.003879
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 23:57:55.960366 with training error 0.000000 and weight change 0.003879
+145 55
+Feed Forward Test correctly classified 145, incorrectly classified 55, test accuracy 0.725000
+
+Starting training at time 23:57:55.961485 with 21 inputs, 4 outputs, [0] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.003879
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 23:58:00.955602 with training error 0.000000 and weight change 0.003879
+145 55
+Feed Forward Test correctly classified 145, incorrectly classified 55, test accuracy 0.725000
+
+Starting training at time 23:58:00.956768 with 21 inputs, 4 outputs, [0] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.003879
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 23:58:06.011622 with training error 0.000000 and weight change 0.003879
+145 55
+Feed Forward Test correctly classified 145, incorrectly classified 55, test accuracy 0.725000
+
+Starting training at time 23:58:06.012733 with 21 inputs, 4 outputs, [0] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.003879
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 23:58:10.946152 with training error 0.000000 and weight change 0.003879
+145 55
+Feed Forward Test correctly classified 145, incorrectly classified 55, test accuracy 0.725000
+
+The set of Car Data with 0 perceptrons
+Max of the Car Data is: 0.725
+Average of the Car Data is:  0.725
+Standard Deviation of the Car Data is:  0.0
+
+
+Now testing Car Data with 5 perceptrons
+
+Starting training at time 23:58:10.947452 with 21 inputs, 4 outputs, [5] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000140
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 23:58:39.135129 with training error 0.000000 and weight change 0.000119
+194 6
+Feed Forward Test correctly classified 194, incorrectly classified 6, test accuracy 0.970000
+
+Starting training at time 23:58:39.139796 with 21 inputs, 4 outputs, [5] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000197
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 23:59:07.634080 with training error 0.000000 and weight change 0.000167
+193 7
+Feed Forward Test correctly classified 193, incorrectly classified 7, test accuracy 0.965000
+
+Starting training at time 23:59:07.638690 with 21 inputs, 4 outputs, [5] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000176
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 23:59:35.915458 with training error 0.000000 and weight change 0.000139
+192 8
+Feed Forward Test correctly classified 192, incorrectly classified 8, test accuracy 0.960000
+
+Starting training at time 23:59:35.920196 with 21 inputs, 4 outputs, [5] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000195
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 00:00:04.092954 with training error 0.000000 and weight change 0.000158
+193 7
+Feed Forward Test correctly classified 193, incorrectly classified 7, test accuracy 0.965000
+
+Starting training at time 00:00:04.097585 with 21 inputs, 4 outputs, [5] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000175
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 200 iterations at time 00:00:32.299171 with training error 0.000000 and weight change 0.000161
+195 5
+Feed Forward Test correctly classified 195, incorrectly classified 5, test accuracy 0.975000
+
+The set of Car Data with 5 perceptrons
+Max of the Car Data is: 0.975
+Average of the Car Data is:  0.967
+Standard Deviation of the Car Data is:  0.00509901951359
+
+
+Now testing Car Data with 10 perceptrons
+
+Starting training at time 00:00:32.303818 with 21 inputs, 4 outputs, [10] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000082
+. . . . . Finished after 155 iterations at time 00:01:11.999414 with training error 0.000000 and weight change 0.000080
+195 5
+Feed Forward Test correctly classified 195, incorrectly classified 5, test accuracy 0.975000
+
+Starting training at time 00:01:12.008332 with 21 inputs, 4 outputs, [10] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000092
+. . . . . . . . . . . . . . . . . . . . . . . . Finished after 174 iterations at time 00:01:56.411916 with training error 0.000000 and weight change 0.000080
+194 6
+Feed Forward Test correctly classified 194, incorrectly classified 6, test accuracy 0.970000
+
+Starting training at time 00:01:56.419967 with 21 inputs, 4 outputs, [10] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000082
+. . . . . . Finished after 156 iterations at time 00:02:35.899387 with training error 0.000000 and weight change 0.000080
+196 4
+Feed Forward Test correctly classified 196, incorrectly classified 4, test accuracy 0.980000
+
+Starting training at time 00:02:35.907769 with 21 inputs, 4 outputs, [10] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000098
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 189 iterations at time 00:03:24.161023 with training error 0.000000 and weight change 0.000080
+194 6
+Feed Forward Test correctly classified 194, incorrectly classified 6, test accuracy 0.970000
+
+Starting training at time 00:03:24.169306 with 21 inputs, 4 outputs, [10] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! on iteration 150; training error 0.000000 and weight change 0.000103
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 191 iterations at time 00:04:13.237012 with training error 0.000000 and weight change 0.000080
+194 6
+Feed Forward Test correctly classified 194, incorrectly classified 6, test accuracy 0.970000
+
+The set of Car Data with 10 perceptrons
+Max of the Car Data is: 0.98
+Average of the Car Data is:  0.973
+Standard Deviation of the Car Data is:  0.004
+
+
+Now testing Car Data with 15 perceptrons
+
+Starting training at time 00:04:13.245522 with 21 inputs, 4 outputs, [15] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 108 iterations at time 00:04:53.327906 with training error 0.000000 and weight change 0.000080
+194 6
+Feed Forward Test correctly classified 194, incorrectly classified 6, test accuracy 0.970000
+
+Starting training at time 00:04:53.340289 with 21 inputs, 4 outputs, [15] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 120 iterations at time 00:05:37.564031 with training error 0.000000 and weight change 0.000080
+194 6
+Feed Forward Test correctly classified 194, incorrectly classified 6, test accuracy 0.970000
+
+Starting training at time 00:05:37.575705 with 21 inputs, 4 outputs, [15] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 113 iterations at time 00:06:19.398332 with training error 0.000000 and weight change 0.000080
+197 3
+Feed Forward Test correctly classified 197, incorrectly classified 3, test accuracy 0.985000
+
+Starting training at time 00:06:19.410241 with 21 inputs, 4 outputs, [15] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 98 iterations at time 00:06:55.762977 with training error 0.000000 and weight change 0.000080
+196 4
+Feed Forward Test correctly classified 196, incorrectly classified 4, test accuracy 0.980000
+
+Starting training at time 00:06:55.774786 with 21 inputs, 4 outputs, [15] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 118 iterations at time 00:07:39.397045 with training error 0.000000 and weight change 0.000080
+198 2
+Feed Forward Test correctly classified 198, incorrectly classified 2, test accuracy 0.990000
+
+The set of Car Data with 15 perceptrons
+Max of the Car Data is: 0.99
+Average of the Car Data is:  0.979
+Standard Deviation of the Car Data is:  0.008
+
+
+Now testing Car Data with 20 perceptrons
+
+Starting training at time 00:07:39.409200 with 21 inputs, 4 outputs, [20] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 88 iterations at time 00:08:22.142435 with training error 0.000000 and weight change 0.000079
+196 4
+Feed Forward Test correctly classified 196, incorrectly classified 4, test accuracy 0.980000
+
+Starting training at time 00:08:22.157715 with 21 inputs, 4 outputs, [20] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 85 iterations at time 00:09:03.430390 with training error 0.000000 and weight change 0.000080
+196 4
+Feed Forward Test correctly classified 196, incorrectly classified 4, test accuracy 0.980000
+
+Starting training at time 00:09:03.445600 with 21 inputs, 4 outputs, [20] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 88 iterations at time 00:09:46.186707 with training error 0.000000 and weight change 0.000080
+195 5
+Feed Forward Test correctly classified 195, incorrectly classified 5, test accuracy 0.975000
+
+Starting training at time 00:09:46.202074 with 21 inputs, 4 outputs, [20] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 101 iterations at time 00:10:35.553771 with training error 0.000000 and weight change 0.000079
+195 5
+Feed Forward Test correctly classified 195, incorrectly classified 5, test accuracy 0.975000
+
+Starting training at time 00:10:35.569232 with 21 inputs, 4 outputs, [20] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 88 iterations at time 00:11:18.609363 with training error 0.000000 and weight change 0.000079
+196 4
+Feed Forward Test correctly classified 196, incorrectly classified 4, test accuracy 0.980000
+
+The set of Car Data with 20 perceptrons
+Max of the Car Data is: 0.98
+Average of the Car Data is:  0.978
+Standard Deviation of the Car Data is:  0.00244948974278
+
+
+Now testing Car Data with 25 perceptrons
+
+Starting training at time 00:11:18.624912 with 21 inputs, 4 outputs, [25] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 80 iterations at time 00:12:06.628983 with training error 0.000000 and weight change 0.000079
+196 4
+Feed Forward Test correctly classified 196, incorrectly classified 4, test accuracy 0.980000
+
+Starting training at time 00:12:06.647767 with 21 inputs, 4 outputs, [25] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 78 iterations at time 00:12:53.127741 with training error 0.000000 and weight change 0.000079
+195 5
+Feed Forward Test correctly classified 195, incorrectly classified 5, test accuracy 0.975000
+
+Starting training at time 00:12:53.146611 with 21 inputs, 4 outputs, [25] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 77 iterations at time 00:13:39.115526 with training error 0.000000 and weight change 0.000080
+193 7
+Feed Forward Test correctly classified 193, incorrectly classified 7, test accuracy 0.965000
+
+Starting training at time 00:13:39.134741 with 21 inputs, 4 outputs, [25] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 76 iterations at time 00:14:24.540563 with training error 0.000000 and weight change 0.000080
+194 6
+Feed Forward Test correctly classified 194, incorrectly classified 6, test accuracy 0.970000
+
+Starting training at time 00:14:24.560112 with 21 inputs, 4 outputs, [25] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 78 iterations at time 00:15:11.378250 with training error 0.000000 and weight change 0.000080
+195 5
+Feed Forward Test correctly classified 195, incorrectly classified 5, test accuracy 0.975000
+
+The set of Car Data with 25 perceptrons
+Max of the Car Data is: 0.98
+Average of the Car Data is:  0.973
+Standard Deviation of the Car Data is:  0.00509901951359
+
+
+Now testing Car Data with 30 perceptrons
+
+Starting training at time 00:15:11.396848 with 21 inputs, 4 outputs, [30] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 68 iterations at time 00:15:59.715201 with training error 0.000000 and weight change 0.000080
+194 6
+Feed Forward Test correctly classified 194, incorrectly classified 6, test accuracy 0.970000
+
+Starting training at time 00:15:59.738001 with 21 inputs, 4 outputs, [30] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 73 iterations at time 00:16:51.704699 with training error 0.000000 and weight change 0.000079
+195 5
+Feed Forward Test correctly classified 195, incorrectly classified 5, test accuracy 0.975000
+
+Starting training at time 00:16:51.726824 with 21 inputs, 4 outputs, [30] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 71 iterations at time 00:17:42.170999 with training error 0.000000 and weight change 0.000079
+196 4
+Feed Forward Test correctly classified 196, incorrectly classified 4, test accuracy 0.980000
+
+Starting training at time 00:17:42.194251 with 21 inputs, 4 outputs, [30] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 62 iterations at time 00:18:26.740750 with training error 0.000000 and weight change 0.000079
+196 4
+Feed Forward Test correctly classified 196, incorrectly classified 4, test accuracy 0.980000
+
+Starting training at time 00:18:26.764206 with 21 inputs, 4 outputs, [30] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 67 iterations at time 00:19:14.529507 with training error 0.000000 and weight change 0.000080
+196 4
+Feed Forward Test correctly classified 196, incorrectly classified 4, test accuracy 0.980000
+
+The set of Car Data with 30 perceptrons
+Max of the Car Data is: 0.98
+Average of the Car Data is:  0.977
+Standard Deviation of the Car Data is:  0.004
+
+
+Now testing Car Data with 35 perceptrons
+
+Starting training at time 00:19:14.551657 with 21 inputs, 4 outputs, [35] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 59 iterations at time 00:20:02.790564 with training error 0.000000 and weight change 0.000079
+197 3
+Feed Forward Test correctly classified 197, incorrectly classified 3, test accuracy 0.985000
+
+Starting training at time 00:20:02.816689 with 21 inputs, 4 outputs, [35] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 60 iterations at time 00:20:52.011546 with training error 0.000000 and weight change 0.000079
+195 5
+Feed Forward Test correctly classified 195, incorrectly classified 5, test accuracy 0.975000
+
+Starting training at time 00:20:52.038031 with 21 inputs, 4 outputs, [35] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 58 iterations at time 00:21:39.564324 with training error 0.000000 and weight change 0.000079
+195 5
+Feed Forward Test correctly classified 195, incorrectly classified 5, test accuracy 0.975000
+
+Starting training at time 00:21:39.591250 with 21 inputs, 4 outputs, [35] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 66 iterations at time 00:22:34.426190 with training error 0.000000 and weight change 0.000079
+195 5
+Feed Forward Test correctly classified 195, incorrectly classified 5, test accuracy 0.975000
+
+Starting training at time 00:22:34.452537 with 21 inputs, 4 outputs, [35] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 55 iterations at time 00:23:19.995920 with training error 0.000000 and weight change 0.000080
+196 4
+Feed Forward Test correctly classified 196, incorrectly classified 4, test accuracy 0.980000
+
+The set of Car Data with 35 perceptrons
+Max of the Car Data is: 0.985
+Average of the Car Data is:  0.978
+Standard Deviation of the Car Data is:  0.004
+
+
+Now testing Car Data with 40 perceptrons
+
+Starting training at time 00:23:20.021765 with 21 inputs, 4 outputs, [40] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 58 iterations at time 00:24:14.556762 with training error 0.000000 and weight change 0.000079
+197 3
+Feed Forward Test correctly classified 197, incorrectly classified 3, test accuracy 0.985000
+
+Starting training at time 00:24:14.586507 with 21 inputs, 4 outputs, [40] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 55 iterations at time 00:25:06.140394 with training error 0.000000 and weight change 0.000079
+197 3
+Feed Forward Test correctly classified 197, incorrectly classified 3, test accuracy 0.985000
+
+Starting training at time 00:25:06.169371 with 21 inputs, 4 outputs, [40] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 60 iterations at time 00:26:02.380430 with training error 0.000000 and weight change 0.000078
+196 4
+Feed Forward Test correctly classified 196, incorrectly classified 4, test accuracy 0.980000
+
+Starting training at time 00:26:02.409349 with 21 inputs, 4 outputs, [40] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 66 iterations at time 00:27:04.031625 with training error 0.000000 and weight change 0.000080
+194 6
+Feed Forward Test correctly classified 194, incorrectly classified 6, test accuracy 0.970000
+
+Starting training at time 00:27:04.060958 with 21 inputs, 4 outputs, [40] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 60 iterations at time 00:28:00.396107 with training error 0.000000 and weight change 0.000079
+194 6
+Feed Forward Test correctly classified 194, incorrectly classified 6, test accuracy 0.970000
+
+The set of Car Data with 40 perceptrons
+Max of the Car Data is: 0.985
+Average of the Car Data is:  0.978
+Standard Deviation of the Car Data is:  0.00678232998313
+
+
