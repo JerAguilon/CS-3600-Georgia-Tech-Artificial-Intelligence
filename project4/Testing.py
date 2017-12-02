@@ -50,7 +50,7 @@ def q6():
     for i in range(0, 41, 5):
         pen_results = []
         for _ in range(5):
-            pen_results.append(testPenData()[1])
+            pen_results.append(testPenData(i)[1])
         print("PENDATA PERCEPTRON COUNT {}".format(i))
         printResults(pen_results)
 
@@ -61,7 +61,16 @@ def q6():
     for i in range(0, 41, 5):
         car_results = []
         for _ in range(5):
-            pen_results.append(testCarData()[1])
+            pen_results.append(testCarData(i)[1])
         print("CARDATA PEREPTRON COUNT {}".format(i))
         printResults(pen_results)
-q6()
+
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('--question', type=int)
+args = parser.parse_args()
+if args.question == 6:
+    q6()
+elif args.question == 5:
+    q5()
+
