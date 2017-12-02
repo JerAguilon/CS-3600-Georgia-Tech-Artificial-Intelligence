@@ -364,7 +364,7 @@ def buildNeuralNet(examples, alpha=0.1, weightChangeThreshold = 0.00008,hiddenLa
             testError += 1
 
     print("{} {}".format(testCorrect, testError))
-    testAccuracy=testCorrect / (float(testCorrect + testError))#num correct/num total
+    testAccuracy=testCorrect / (float(testCorrect + testError))
 
     print 'Feed Forward Test correctly classified %d, incorrectly classified %d, test accuracy %f\n'%(testCorrect,testError,testAccuracy)
 

@@ -1,0 +1,63 @@
+Q5
+PENDATA
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting training at time 16:51:50.859569 with 16 inputs, 10 outputs, [24] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 86 iterations at time 17:00:31.793468 with training error 0.000000 and weight change 0.000080
+3148 350
+Feed Forward Test correctly classified 3148, incorrectly classified 350, test accuracy 0.899943
+
+Starting training at time 17:00:32.438111 with 16 inputs, 10 outputs, [24] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 71 iterations at time 17:08:13.512335 with training error 0.000000 and weight change 0.000079
+3156 342
+Feed Forward Test correctly classified 3156, incorrectly classified 342, test accuracy 0.902230
+
+Starting training at time 17:08:14.153528 with 16 inputs, 10 outputs, [24] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 80 iterations at time 17:16:30.312066 with training error 0.000000 and weight change 0.000080
+3154 344
+Feed Forward Test correctly classified 3154, incorrectly classified 344, test accuracy 0.901658
+
+Starting training at time 17:16:31.065874 with 16 inputs, 10 outputs, [24] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 76 iterations at time 17:24:32.221885 with training error 0.000000 and weight change 0.000080
+3147 351
+Feed Forward Test correctly classified 3147, incorrectly classified 351, test accuracy 0.899657
+
+Starting training at time 17:24:33.130200 with 16 inputs, 10 outputs, [24] hidden layers, size of training set 7494, and size of test set 3498
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 72 iterations at time 17:31:59.627027 with training error 0.000000 and weight change 0.000080
+3161 337
+Feed Forward Test correctly classified 3161, incorrectly classified 337, test accuracy 0.903659
+
+MAX:     0.903659233848
+AVERAGE: 0.901429388222
+STD:     0.00148436306298
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CARDATA
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting training at time 17:32:00.337321 with 21 inputs, 4 outputs, [16] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 120 iterations at time 17:33:37.571028 with training error 0.000000 and weight change 0.000079
+196 4
+Feed Forward Test correctly classified 196, incorrectly classified 4, test accuracy 0.980000
+
+Starting training at time 17:33:37.599065 with 21 inputs, 4 outputs, [16] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 99 iterations at time 17:34:55.762637 with training error 0.000000 and weight change 0.000079
+195 5
+Feed Forward Test correctly classified 195, incorrectly classified 5, test accuracy 0.975000
+
+Starting training at time 17:34:55.795887 with 21 inputs, 4 outputs, [16] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 87 iterations at time 17:36:03.321181 with training error 0.000000 and weight change 0.000080
+195 5
+Feed Forward Test correctly classified 195, incorrectly classified 5, test accuracy 0.975000
+
+Starting training at time 17:36:03.345264 with 21 inputs, 4 outputs, [16] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 96 iterations at time 17:37:18.956851 with training error 0.000000 and weight change 0.000080
+193 7
+Feed Forward Test correctly classified 193, incorrectly classified 7, test accuracy 0.965000
+
+Starting training at time 17:37:18.980773 with 21 inputs, 4 outputs, [16] hidden layers, size of training set 1528, and size of test set 200
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Finished after 121 iterations at time 17:38:52.529742 with training error 0.000000 and weight change 0.000080
+194 6
+Feed Forward Test correctly classified 194, incorrectly classified 6, test accuracy 0.970000
+
+MAX:     0.98
+AVERAGE: 0.973
+STD:     0.00509901951359
+:
